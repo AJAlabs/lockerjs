@@ -15,6 +15,12 @@ If you like it, please feel free to fork it and use it as your own. At the momen
 
 3. All you have to do now is fire up your app! `node app`
 
+### Usage
+
+- Add files to the public directory to be served in the browser
+- Edit app.js to set which port the app is served on
+- Edit app.js to set the username and password
+
 
 ### Requirements
 
