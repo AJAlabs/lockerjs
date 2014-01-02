@@ -13,4 +13,4 @@ app.configure(function() {
 });
 
 app.listen(1717);
-console.log('Listening on port 1717');
+console.log('\nLocker.js\nServer address: http://0.0.0.0:1717\nServer running... press ctrl-c to stop');

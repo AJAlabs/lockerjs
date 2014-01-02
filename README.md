@@ -1,4 +1,4 @@
-# Locker.js - "A Node.js locker for your stuff"
+## Locker.js - "A Node.js locker for your stuff"
 
 So you've created your "Hello World" app and want to start hacking on something a little more challenging?
 
