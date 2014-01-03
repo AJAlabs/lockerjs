@@ -27,6 +27,16 @@ If you like it, please feel free to fork it and use it as your own. At the momen
 - [Node.js](http://nodejs.org)
 - [npm](https://npmjs.org)
 - Linux, Unix, or Mac OS X
+- Some JavaScript and command-line skills
+
+
+### Dependancies
+
+- [AngularJS](http://angularjs.org)
+- [Bootstrap](http://getbootstrap.com)
+- [Connect](http://www.senchalabs.org/connect/)
+- [Express.js](http://expressjs.com)
+- [Grunt](http://gruntjs.com/getting-started)
 
 
 ### License

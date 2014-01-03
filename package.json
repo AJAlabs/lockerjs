@@ -1,6 +1,6 @@
 {
   "name": "Locker.js",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A Node.js locker for your stuff",
   "author": "AJ Acevedo",
   "license": "MIT",
