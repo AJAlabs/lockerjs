@@ -2,6 +2,9 @@
 var express = require('express');
 var app = express();
 
+// Map the EJS template engine to ".html" files
+app.engine('html', require('ejs').renderFile);
+
 // Basic HTTP Authentication
 // Set the Username and Password HERE
 app.use(express.basicAuth('testUser', 'testPass'));
