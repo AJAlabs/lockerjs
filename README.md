@@ -32,10 +32,10 @@ If you like it, please feel free to fork it and use it as your own. At the momen
 
 ### Dependancies
 
-- [AngularJS](http://angularjs.org)
 - [Bootstrap](http://getbootstrap.com)
 - [Connect](http://www.senchalabs.org/connect/)
 - [Express.js](http://expressjs.com)
+- [handlebars](http://handlebarsjs.com)
 - [Grunt](http://gruntjs.com/getting-started)
 
 
