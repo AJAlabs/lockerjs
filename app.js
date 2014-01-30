@@ -1,13 +1,32 @@
-// Require Express - http://expressjs.com
-var express = require('express');
-var app = express();
+// Require Express and Dependencies
+var express = require('express'),
+    http    = require('http'),
+    path    = require('path'),
+    config  = require('./config'),
+    exphbs  = require('express3-handlebars'),
+    app     = express();
 
-// Map the EJS template engine to ".html" files
-app.engine('html', require('ejs').renderFile);
+// Global Configurations & Settings
+app.set('title', config.title);
+
+app.set('port', process.env.PORT || config.port);
+
+// TODO: This will most likely be removed as express3-handlebars sets the view path
+// app.set('views', path.join(__dirname, 'views'));
+
+// Map the handlebars template engine
+app.engine('.hbs', exphbs({defaultLayout: 'layout', extname: '.hbs'}));
+app.set('view engine', '.hbs');
+
+// Routes
+app.get('/', function (req, res) {
+    res.render('index');
+});
+
 
 // Basic HTTP Authentication
 // Set the Username and Password HERE
-app.use(express.basicAuth('testUser', 'testPass'));
+// app.use(express.basicAuth('testUser', 'testPass'));
 
 // Serve up all files and directories in /public
 app.configure(function() {
@@ -17,10 +36,25 @@ app.configure(function() {
   app.use(express.errorHandler());
 });
 
+
 if (!module.parent) {
   // Listen on the following port
-  app.listen(7000);
+  app.listen(app.get('port'));
 
   // Output the following to the Command-line
-  console.log('\nLocker.js\nServer address: http://0.0.0.0:7000\nServer running... press ctrl-c to stop');
+  console.log('\nLocker.js - ' + app.settings.env + ' mode\n' +
+              'Server address: http://0.0.0.0:' + config.port +
+              '\nServer running... press ctrl-c to stop');
+}
+
+
+// Development Environment Configurations & Settings
+if ('development' == app.get('env')) {
+  app.use(express.errorHandler());
+}
+
+
+// Production Environment Configurations & Settings
+if ('production' == app.get('env')) {
+  // place your production configurations here
 }
