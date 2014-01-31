@@ -4,6 +4,7 @@
   "description": "A Node.js locker for your stuff",
   "author": "AJ Acevedo",
   "license": "MIT",
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/AJAlabs/lockerjs.git"
