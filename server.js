@@ -54,7 +54,7 @@ if (!module.parent) {
   app.listen(app.get('port'));
 
   // Output the following to the Command-line
-  console.log('\nLocker.js - ' + app.settings.env + ' mode\n' +
+  console.log('Locker.js - ' + app.settings.env + ' mode\n' +
               'Server address: http://0.0.0.0:' + config.port +
               '\nServer running... press ctrl-c to stop');
 }

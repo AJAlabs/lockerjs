@@ -1,4 +1,4 @@
-## Locker.js - "A Node.js locker for your stuff"
+## Locker.js - "A Node.js locker"
 
 So you've created your "Hello World" app and want to start hacking on something a little more challenging?
 
@@ -13,14 +13,11 @@ If you like it, please feel free to fork it and use it as your own. At the momen
 
 2. From your local clone run `npm install`
 
-3. All you have to do now is fire up your app! `node app`
+3. All you have to do now is fire up your app! `npm start`
 
 ### Usage
 
-- Add files to the public directory to be served in the browser
-- Edit app.js to set which port the app is served on
-- Edit app.js to set the username and password
-
+- placeholder
 
 ### Requirements
 
@@ -32,10 +29,10 @@ If you like it, please feel free to fork it and use it as your own. At the momen
 
 ### Dependancies
 
-- [Bootstrap](http://getbootstrap.com)
+- [AngularJS](http://angularjs.org)
+- [Bootstrap Sass](http://getbootstrap.com)
 - [Connect](http://www.senchalabs.org/connect/)
 - [Express.js](http://expressjs.com)
-- [handlebars](http://handlebarsjs.com)
 - [Grunt](http://gruntjs.com/getting-started)
 
 
