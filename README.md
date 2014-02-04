@@ -19,10 +19,23 @@ If you like it, please feel free to fork it and use it as your own. At the momen
 
 - placeholder
 
+#### Running MongoDB
+
+```
+To have launchd start mongodb at login:
+    ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
+Then to load mongodb now:
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
+Or, if you don't want/need launchctl, you can just run:
+    mongod
+```
+
+
 ### Requirements
 
 - [Node.js](http://nodejs.org)
 - [npm](https://npmjs.org)
+- [MongoDB](http://www.mongodb.org)
 - Linux, Unix, or Mac OS X
 - Some JavaScript and command-line skills
 

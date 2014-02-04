@@ -3,6 +3,8 @@ var express = require('express'),
     http    = require('http'),
     path    = require('path'),
     config  = require('./config'),
+    mongoose= require('mongoose'),
+    db      = require('./config/db'),
     app     = express();
 
 
